@@ -1,0 +1,32 @@
+# Copyright 2021 Canonical Ltd.
+# See LICENSE file for licensing details.
+
+name: tls-operator
+display-name: |
+  TLS Operator
+description: |
+  TLS Operator creates self-signed certificates that other charms can retrieve through
+  relationships.
+summary: |
+  TLS Operator creates self-signed certificates that other charms can retrieve through
+  relationships.
+
+containers:
+  dummy:
+    resource: dummy-image
+
+provides:
+  certificate:
+    interface: tls
+
+resources:
+  dummy-image:
+    type: oci-image
+    description: Dummy unused image
+
+storage:
+  certs:
+    type: filesystem
+    description: Certificate storage
+    minimum-size: 100M
+    location: /etc/certs

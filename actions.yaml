@@ -1,0 +1,5 @@
+# Copyright 2021 Canonical Ltd.
+# See LICENSE file for licensing details.
+
+get-pfx-password:
+  description: Returns the admin  password for the PFX file.
