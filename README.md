@@ -2,11 +2,11 @@
 
 ## Description
 
-TODO: Describe your charm in a few paragraphs of Markdown
+Provider of self-signed certificates to charms that require them.
 
 ## Usage
 
-```
+```bash
 juju deploy tls-operator --trust
 ```
 
@@ -18,14 +18,10 @@ juju config tls-operator ca-cert-subject=<your CA subject name>
 
 ## Relations
 
-TODO: Provide any relations which are provided or required by your charm
+```bash
+juju relate tls-operator <other charm>
+```
 
 ## OCI Images
 
-TODO: Include a link to the default image your charm uses
-
-## Contributing
-
-Please see the [Juju SDK docs](https://juju.is/docs/sdk) for guidelines
-on enhancements to this charm following best practice guidelines, and
-`CONTRIBUTING.md` for developer guidance.
+Dummy OCI Image
